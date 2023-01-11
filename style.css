@@ -1,0 +1,36 @@
+body {
+  margin: 0;
+}
+
+.page {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(0deg, rgb(253, 232, 233) 0%, rgb(246, 224, 173) 35%, rgb(252, 201, 185) 100%);
+}
+.page .container {
+  display: flex;
+}
+.page .container .izuna-container {
+  width: 960px;
+  height: 540px;
+  overflow: hidden;
+}
+.page .container .izuna-container .izuna {
+  width: 100%;
+  height: 100%;
+  background-image: url("https://docs.google.com/uc?id=1wB_Rw3krZi_n8KVpbdra_s9oUyu_AP1D");
+  background-size: cover;
+}
+.page .footer {
+  position: fixed;
+  height: 2rem;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.page .footer .links {
+  margin-left: 1rem;
+}/*# sourceMappingURL=style.css.map */
