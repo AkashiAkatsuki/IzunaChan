@@ -8,22 +8,22 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(0deg, rgba(253,232,233,1) 0%, rgba(246,224,173,1) 35%, rgba(252,201,185,1) 100%);
 
     .container {
         display: flex;
 
-        .izuna-container {
+        .tofu-container {
             width: 960px;
             height: 540px;
             overflow: hidden;
 
-            .izuna {
+            .tofu {
                 width: 100%;
                 height: 100%;
-                background-image: url("https://docs.google.com/uc?id=1wB_Rw3krZi_n8KVpbdra_s9oUyu_AP1D");
                 background-size: cover;
             }
+            .izuna { background-image: url("images/izuna.png"); }
+            .arona { background-image: url("images/arona.png");}
         }
     }
     .footer {
@@ -37,4 +37,10 @@ body {
             margin-left: 1rem;
         }
     }
+}
+.izuna-background {
+    background: linear-gradient(0deg, rgba(253,232,233,1) 0%, rgba(246,224,173,1) 35%, rgba(252,201,185,1) 100%);
+}
+.arona-background {
+    background: linear-gradient(0deg, rgba(253,192,227,1) 0%, rgba(232,235,240,1) 10%, rgb(71, 221, 239) 100%);
 }

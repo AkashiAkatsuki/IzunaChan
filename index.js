@@ -1,17 +1,17 @@
 "use strict";
 window.onload = () => {
     const page = document.querySelector('.page');
-    const izuna = document.querySelector('.izuna');
+    const tofu = document.querySelector('.tofu');
     const frameCount = 60;
     const clamp = (value, min, max) => {
         return Math.max(min, Math.min(max, value));
     };
     const setImageX = (pointerX) => {
-        const rect = izuna.getBoundingClientRect();
+        const rect = tofu.getBoundingClientRect();
         const offsetX = clamp(pointerX - rect.x, 0, rect.width - 1);
         const frame = Math.floor(offsetX * frameCount / rect.width);
         const imageX = -rect.width * frame;
-        izuna.style.backgroundPositionX = imageX.toString() + 'px';
+        tofu.style.backgroundPositionX = imageX.toString() + 'px';
     };
     page.addEventListener('touchmove', (e) => {
         const te = e;
